@@ -117,7 +117,7 @@ def uploadimg():
     payload = {"id": id}
     print("Список картинок: ")
     fileslist = os.listdir('.')
-    pattern = "*.jpg"
+    pattern = "*.png"
     for entry in fileslist:
         if fnmatch.fnmatch(entry, pattern):
             print(entry)
